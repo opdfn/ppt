@@ -304,6 +304,18 @@
         .pedagogy-icon-wrapper { width: 80px; height: 80px; color: #1a202c; transition: transform 0.4s ease, color 0.3s ease; }
         .pedagogy-icon-wrapper svg { width: 100%; height: 100%; fill: currentColor; }
 
+        /* REVIEW SECTION */
+        .review-section { display: flex; justify-content: center; align-items: center; }
+        .review-card { background-color: #ffffff;  margin: 0 auto; padding: 40px; border-radius: 16px; box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05); text-align: center; }
+        .stars { color: #ffc107; font-size: 28px; margin-bottom: 15px; }
+        .review-card h1 { color: #1a202c; font-size: 28px; margin-top: 0; margin-bottom: 20px; font-weight: 700; }
+        p.review-text { font-size: 16px; line-height: 1.8; color: #4a5568; margin-bottom: 30px; font-style: italic; }
+        .author { display: flex; align-items: center; justify-content: center; gap: 15px; }
+        .avatar { width: 50px; height: 50px; background-color: #e2e8f0; border-radius: 50%; display: flex; justify-content: center; align-items: center; font-weight: bold; color: #4a5568; font-size: 18px; }
+        .author-info { text-align: left; }
+        .author-name { font-weight: 600; color: #2d3748; margin: 0; font-size: 16px; }
+        .author-role { font-size: 14px; color: #a0aec0; margin: 0; }
+
         /* LITERATURE SECTION */
         .literature-section { max-width: 1000px; margin: 0 auto; }
         .bar-chart-container { display: flex; flex-direction: column; gap: 25px; margin-bottom: 3.5rem; }
@@ -422,7 +434,7 @@
     <div class="circle-decoration"></div>
 
     <!-- PPT UI Elements -->
-    <div id="slide-counter" class="presentation-ui">1 / 11</div>
+    <div id="slide-counter" class="presentation-ui">1 / 12</div>
     <div id="nav-hint" class="presentation-ui">Use <kbd>&larr;</kbd> <kbd>&rarr;</kbd> or <kbd>swipe</kbd> to navigate</div>
 
     <button id="fullscreenToggle" class="fullscreen-btn" aria-label="Toggle Fullscreen">
@@ -511,7 +523,7 @@ NCFSE 2023 = How to do it (implementation)</p>
                     <div class="vision-card hidden-item"><svg class="vision-icon" fill="currentColor" viewBox="0 0 24 24"><path d="M9 21c0 .55.45 1 1 1h4c.55 0 1-.45 1-1v-1H9v1zm3-19C8.14 2 5 5.14 5 9c0 2.38 1.19 4.47 3 5.74V17c0 .55.45 1 1 1h6c.55 0 1-.45 1-1v-2.26c1.81-1.27 3-3.36 3-5.74 0-3.86-3.14-7-7-7zm2.85 11.1l-.85.6V16h-4v-2.3l-.85-.6C7.8 12.16 7 10.63 7 9c0-2.76 2.24-5 5-5s5 2.24 5 5c0 1.63-.8 3.16-2.15 4.1z"/></svg><h3>বৌদ্ধিক</h3><p>Intellectual</p><p class="sanskrit-text">(Vijnanamaya Kosha)</p></div>
                     <div class="vision-card hidden-item"><svg class="vision-icon" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2.25L14.07 5h3.68v3.68L20.5 10.75 17.75 12.83V16.5h-3.68L12 19.25 9.93 16.5H6.25v-3.67L3.5 10.75l2.75-2.08V5h3.68L12 2.25zm0 13a4.25 4.25 0 1 0 0-8.5 4.25 4.25 0 0 0 0 8.5z"/></svg><h3>চৈতন্যিক</h3><p>Blissful/Spiritual</p><p class="sanskrit-text">(Anandamaya Kosha)</p></div>
                 </div>
-                <p class="vision-footer hidden-item">"Nurturing well-rounded individuals through the ancient Indian model of holistic development."</p>
+                <p class="vision-footer hidden-item"> </p>
             </div>
         </section>
 
@@ -603,11 +615,24 @@ Less focus on development stages of child</p>
             </div>
         </section>
 
-        <!-- SLIDE 8: LITERATURE REVIEW & COMPARISON -->
+        <!-- SLIDE 8: REVIEW -->
+        <section class="slide review-section">
+            <div class="section-wrapper">
+                <div class="review-card hidden-item">
+                    <h1>REVIEW</h1>
+                    <p class="review-text">
+                        Yarychev আৰু Mentsiev ৰ গৱেষণাই প্ৰমাণ কৰিছে যে যেতিয়া শিক্ষকে সঠিক পৰিকল্পনাৰে ডিজিটেল সম্পদসমূহক ব্যৱহাৰ কৰে, তেতিয়া শিক্ষাৰ্থীৰ শিক্ষাৰ প্ৰতি আগ্ৰহ বৃদ্ধি পায়। এই গৱেষণাই আঙুলিয়াই দিয়ে যে ডিজিটেল শিক্ষা হ'ল শিক্ষাৰ্থীৰ সক্রিয় অংশগ্ৰহণ বৃদ্ধিৰ বাবে অন্যতম আহিলা।  ,<p>  Ordov et al. আৰু তেওঁৰ সতীৰ্থসকলে শিক্ষাৰ এক সামগ্রিক অর্থনৈতিক দৃষ্টিভংগী দাঙি ধৰিছে। তেওঁলোকৰ গৱেষণা 'The Digitalization as a Global Trend and Growth Factor' ৰ সামগ্রিক বিকাশৰ বাবেও শিক্ষাৰ ডিজিটেলকৰণক উল্লেখ কৰিছে। তেওঁলোকে উল্লেখ কৰিছে যে উচ্চ-প্ৰযুক্তিৰ সংযোজন হ'ল বর্তমানৰ ডিজিটেল পৃথিৱীত দেশৰ উন্নয়ন ত্বৰান্বিত কৰাৰ এক অভিনৱ কৌশল। তেওঁলোকৰ মতে, ডিজিটেল প্রযুক্তি কেৱল শিক্ষাতেই নহয়, বৰঞ্চ ব্যৱস্থাপনা, বিজ্ঞান আৰু অর্থনৈতিক দিশতো অপৰিহাৰ্য হৈ পৰিছে।  </p> Yarychev (2020) ৰ গৱেষণাৰ মূখ্য সিদ্ধান্ত হ'ল যে শিক্ষকে ডিজিটেল সম্পদসমূহৰ উদ্দেশ্যপূর্ণ গ্রহণযোগ্যতাৰ বাবে বিশেষ কৌশল অৱলম্বন কৰিব লাগিব। ইয়াৰ অৰ্থ হ'ল প্ৰযুক্তিৰ ব্যৱহাৰ কেৱল দেখুৱাবলৈ নহয়, বৰঞ্চ ই যাতে শিক্ষাৰ্থীৰ শিক্ষণ উন্নত কৰে তাৰ ওপৰত গুৰুত্ব দিব লাগে। এই ক্ষেত্রত NCFSE 2023 এ শিক্ষকৰ পেছাদাৰী বিকাশৰ ওপৰত বিশেষ গুৰুত্ব দিছে। আমাৰ নতুন পাঠ্যক্রমই তাকেই কৈছে: প্রযুক্তি শিক্ষকৰ পৰিপূৰকহে, বিকল্প নহয়। শিক্ষকৰ সঠিক নির্দেশনা অবিহনে ডিজিটেল মাধ্যমে শিক্ষার্থীক বিপথে পৰিচালিত কৰাৰ সম্ভাৱনা থাকে। 
+                    </p>
+                    <div class="author">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SLIDE 9: LITERATURE REVIEW & COMPARISON -->
         <section class="slide literature-section">
             <div class="section-wrapper">
-                <div class="section-header-literature hidden-item"><h2>৫+৩+৩+৪ ত কি কি বিষয়ত  বৃদ্ধি কৰিছে আৰু কমাইছে
- ভিজুৱেলৰ মাধ্যমে চাওঁ আহা  </h2></div>
+                <div class="section-header-literature hidden-item"><h2>৫+৩+৩+৪ ত কি কি বিষয়ত  বৃদ্ধি কৰিছে  ?</h2></div>
                 <div class="bar-chart-container">
                     <div class="bar-row hidden-item">
                         <div class="bar-label">Flexibility (2023)</div>
@@ -627,16 +652,16 @@ Less focus on development stages of child</p>
                         <div class="bar-track"><div class="bar-fill fill-red" style="--target-width: 20%;">20%</div></div>
                     </div>
                 </div>
-                <p class="literature-footer hidden-item">বিভিন্ন ধৰণৰ এক্টিভিটিৰ মাধ্যমে আমি ৰট মেমোৰাইজেচন নকৰি, ল’ৰা-ছোৱালীবিলাকক প্লে-ৱে মেথডৰ সহায়ত ধ্যান কেন্দ্ৰীভূত কৰিব পাৰিম। 
+                <p class="literature-footer hidden-item"> 
 </p>
             </div>
         </section>
 
-        <!-- SLIDE 9: IMPACT PROJECTION (Fixed Awkward Look) -->
+        <!-- SLIDE 10: IMPACT PROJECTION (Fixed Awkward Look) -->
         <section class="slide impact-section">
             <div class="section-wrapper">
                 <div class="section-header-impact hidden-item">
-                    <h2> আশা কৰা মতে ২০৩০ লৈকে আমাৰ শিক্ষা ব্যৱস্থা কেনেকৈ আগবাঢ়ি যাব, গ্ৰাফৰ মাধ্যমে বুজোৱা হৈছে।
+                    <h2> ২০৩০ লৈকে আমাৰ শিক্ষা ব্যৱস্থাৰ লক্ষ্য  >>>
 </h2>
                 </div>
                 <!-- Swiping on mobile now works globally. This div no longer has manual swipe logic -->
@@ -673,13 +698,13 @@ Less focus on development stages of child</p>
                 </div>
                 <p class="impact-footer hidden-item">
                     <svg class="trend-icon" fill="currentColor" viewBox="0 0 24 24"><path d="M16 6l2.29 2.29-4.88 4.88-4-4L2 16.59 3.41 18l6-6 4 4 6.3-6.29L22 12V6z"/></svg>
-                    গাঁও অঞ্চলত আমি বেছি কৈ গুৰুত্ব দিব লাগিব।
+                   
 
                 </p>
             </div>
         </section>
 
-        <!-- SLIDE 10: CONCLUSION -->
+        <!-- SLIDE 11: CONCLUSION -->
         <section class="slide conclusion-section">
             <div class="section-wrapper">
                 <div class="section-header-conclusion hidden-item">
@@ -702,7 +727,7 @@ Less focus on development stages of child</p>
             </div>
         </section>
 
-        <!-- SLIDE 11: THANK YOU -->
+        <!-- SLIDE 12: THANK YOU -->
         <section class="slide thank-you-section">
             <div class="section-wrapper">
                 <h1 class="thank-you-title hidden-item">THANK YOU!</h1>
